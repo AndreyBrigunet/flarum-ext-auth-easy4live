@@ -1,4 +1,4 @@
-<?php namespace TitusPiJean\Flarum\Auth\LDAP\Controllers;
+<?php namespace AndreyBrigunet\Flarum\Auth\LDAP\Controllers;
 
 use Exception;
 use Flarum\Forum\Auth\ResponseFactory;

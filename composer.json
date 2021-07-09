@@ -20,15 +20,15 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"TitusPiJean\\Flarum\\Auth\\LDAP\\": "src/"
+			"AndreyBrigunet\\Flarum\\Auth\\LDAP\\": "src/"
 		}
 	},
 	"extra": {
 		"flarum-extension": {
 			"title": "Easy4Live login",
 			"icon": {
-				"name": "far fa-address-book",
-				"backgroundColor": "#b15959",
+				"name": "fas fa-people-arrows",
+				"backgroundColor": "#FE2584",
 				"color": "#fff"
 			}
 		}

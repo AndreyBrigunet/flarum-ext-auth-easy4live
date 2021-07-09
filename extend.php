@@ -1,4 +1,4 @@
-<?php namespace TitusPiJean\Flarum\Auth\LDAP;
+<?php namespace AndreyBrigunet\Flarum\Auth\LDAP;
 
 use Flarum\Extend;
 use Flarum\Foundation\Application;
@@ -15,10 +15,10 @@ return [
     ->css(__DIR__.'/less/forum.less'),
 
   (new Extend\Routes('forum'))
-    ->post('/auth/with', 'auth.with.post', Controllers\AuthController::class),
+    ->post('/auth/with', 'auth.with.forum', Controllers\AuthController::class),
 
   (new Extend\Routes('api'))
-    ->post('/auth/register', 'auth.register.post', \Flarum\Forum\Controller\RegisterController::class),
+    ->post('/auth/register', 'auth.register.api', \Flarum\Forum\Controller\RegisterController::class),
 
   (new Extend\Settings)
     ->serializeToForum('easy4live-auth.onlyUse', 'easy4live-auth.onlyUse', 'boolVal', false)
