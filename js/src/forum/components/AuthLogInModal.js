@@ -9,9 +9,9 @@ import extractText from 'flarum/utils/extractText';
 import ItemList from 'flarum/utils/ItemList';
 import Stream from 'flarum/utils/Stream';
 
-const translationPrefix = 'easy4live-auth.forum.';
+const translationPrefix = 'andreybrigunet-auth-easy4live.forum.';
 
-export default class LDAPLogInModal extends Modal {
+export default class AuthLogInModal extends Modal {
   oninit(vnode) {
     super.oninit(vnode);
 

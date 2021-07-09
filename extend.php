@@ -21,6 +21,5 @@ return [
     ->post('/auth/register', 'auth.register.api', \Flarum\Forum\Controller\RegisterController::class),
 
   (new Extend\Settings)
-    ->serializeToForum('easy4live-auth.onlyUse', 'easy4live-auth.onlyUse', 'boolVal', false)
-    ->serializeToForum('easy4live-auth.method_name', 'easy4live-auth.method_name', 'strVal', 'easy4live'),
+    ->serializeToForum('andreybrigunet-auth-easy4live.onlyUse', 'andreybrigunet-auth-easy4live.onlyUse', 'boolVal', false),
 ];

@@ -99,10 +99,10 @@ class AuthController implements RequestHandlerInterface
 
 	protected function getUser($data)
     {
-		// $url = $this->getSetting("domain") . $this->getSetting("request");
+		$url = $this->getSetting("domain") . $this->getSetting("request");
 
         $ch = curl_init();
-        curl_setopt($ch, CURLOPT_URL, "https://gamma.easy4live.com/api/request/");
+        curl_setopt($ch, CURLOPT_URL, $url);
         curl_setopt($ch, CURLOPT_POST, true);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($data));
@@ -125,6 +125,6 @@ class AuthController implements RequestHandlerInterface
 
 	protected function getSetting($key): ?string
     {
-        return $this->settings->get("easy4live-auth.{$key}");
+        return $this->settings->get("andreybrigunet-auth-easy4live.{$key}");
     }
 }
