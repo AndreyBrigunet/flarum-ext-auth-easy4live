@@ -8,4 +8,4 @@ This extension enables users to log into [Flarum](https://github.com/flarum/core
 
 ## Languages
 
-This extension is translated in French and English.
+This extension is translated in English.
