@@ -39,7 +39,7 @@ app.initializers.add('andreybrigunet-auth-easy4live', () => {
 						onclick: () => app.modal.show(AuthLogInModal)
 					},
 					app.translator.trans(translationPrefix + 'log_in_with', 
-						{ server: app.forum.attribute('andreybrigunet-auth-easy4live.method_name')})
+						{ server: app.forum.attribute('andreybrigunet-auth-easy4live.name')})
 				),
 				0
 			);

@@ -42,7 +42,7 @@ export default class AuthLogInModal extends Modal {
   }
 
   title() {
-    return app.translator.trans(translationPrefix + 'log_in_with', {server: app.forum.attribute('LDAP_method_name')});
+    return app.translator.trans(translationPrefix + 'log_in_with', { server: app.forum.attribute('andreybrigunet-auth-easy4live.name')});
   }
 
   content() {
