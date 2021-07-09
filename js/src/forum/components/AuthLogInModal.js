@@ -167,20 +167,6 @@ export default class AuthLogInModal extends Modal {
     form.submit();
     document.body.removeChild(form);
   }
-  
-  __onsubmit(e) {
-    e.preventDefault();
-
-    this.loading = true;
-
-    const identification = this.identification();
-    const password = this.password();
-    const remember = this.remember();
-    const csrfToken = app.session.csrfToken;
-    
-    this.login({ identification, password, remember, csrfToken }, { errorHandler: this.onerror.bind(this) })
-      .then(() => window.location.reload(), this.loaded.bind(this));
-  }
 
   onerror(error) {
     if (error.status === 401) {
@@ -188,18 +174,5 @@ export default class AuthLogInModal extends Modal {
     }
 
     super.onerror(error);
-  }
-  
-  login(body, options = {}) {
-    return app.request(
-      Object.assign(
-        {
-          method: 'POST',
-          url: `${app.forum.attribute('baseUrl')}/auth/with`,
-          body,
-        },
-        options
-      )
-    );
   }
 }
