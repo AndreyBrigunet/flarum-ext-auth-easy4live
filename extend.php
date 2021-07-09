@@ -15,7 +15,7 @@ return [
     ->css(__DIR__.'/less/forum.less'),
 
   (new Extend\Routes('forum'))
-    ->post('/auth/with', 'auth.with.post', Controllers\LDAPAuthController::class),
+    ->post('/auth/with', 'auth.with.post', Controllers\AuthController::class),
 
   (new Extend\Routes('api'))
     ->post('/auth/register', 'auth.register.post', \Flarum\Forum\Controller\RegisterController::class),

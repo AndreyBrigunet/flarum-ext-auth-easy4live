@@ -16,7 +16,7 @@ use Illuminate\Support\Arr;
 use Laminas\Diactoros\Response\HtmlResponse;
 use Illuminate\Contracts\View\Factory as ViewFactory;
 
-class LDAPAuthController implements RequestHandlerInterface
+class AuthController implements RequestHandlerInterface
 {
 	protected $response;
 	protected $settings;
