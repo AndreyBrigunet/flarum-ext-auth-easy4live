@@ -1,6 +1,6 @@
 {
 	"name": "andreybrigunet/flarum-ext-auth-easy4live",
-	"description": "Allow users to log in through LDAP.",
+	"description": "Allow users to log in through easy4live.com.",
 	"type": "flarum-extension",
 	"keywords": [
 		"authentication"
@@ -20,7 +20,7 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"AndreyBrigunet\\Flarum\\Auth\\LDAP\\": "src/"
+			"AndreyBrigunet\\Flarum\\Auth\\": "src/"
 		}
 	},
 	"extra": {

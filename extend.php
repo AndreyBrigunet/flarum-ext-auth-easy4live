@@ -1,4 +1,4 @@
-<?php namespace AndreyBrigunet\Flarum\Auth\LDAP;
+<?php namespace AndreyBrigunet\Flarum\Auth;
 
 use Flarum\Extend;
 use Flarum\Foundation\Application;
@@ -22,5 +22,5 @@ return [
 
   (new Extend\Settings)
     ->serializeToForum('easy4live-auth.onlyUse', 'easy4live-auth.onlyUse', 'boolVal', false)
-    ->serializeToForum('easy4live-auth.method_name', 'easy4live-auth.method_name', 'strVal', 'LDAP'),
+    ->serializeToForum('easy4live-auth.method_name', 'easy4live-auth.method_name', 'strVal', 'easy4live'),
 ];

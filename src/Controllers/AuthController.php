@@ -1,4 +1,4 @@
-<?php namespace AndreyBrigunet\Flarum\Auth\LDAP\Controllers;
+<?php namespace AndreyBrigunet\Flarum\Auth\Controllers;
 
 use Exception;
 use Flarum\Forum\Auth\ResponseFactory;
@@ -21,12 +21,13 @@ class AuthController implements RequestHandlerInterface
 	protected $response;
 	protected $settings;
 	protected $view;
+	protected $api;
 
 	public function __construct(Client $api, ResponseFactory $response, SettingsRepositoryInterface $settings, ViewFactory $view)
 	{
-		$this->api = $api;
 		$this->response = $response;
 		$this->settings = $settings;
+		$this->api = $api;
 		$this->view = $view;
 	}
 
