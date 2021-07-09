@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "@tituspijean/auth-ldap",
+  "name": "@andreybrigunet/auth-easy4live",
   "dependencies": {
     "flarum-webpack-config": "^1.0",
     "webpack": "^4.0",
